@@ -5,6 +5,7 @@ import {Button,Image} from "semantic-ui-react";
 import SearchBar from './SearchBar';
 import "../App.css";
 import styled from "styled-components";
+import Home from "./Home";
 // For Basic setup only please change
 // if not logged in I want register/login links
 // if logged in I want logout link, also ProtectRoutes Rendered
@@ -67,6 +68,8 @@ const NavBar = () => {
     <div style={styles.navbar}>
       <div >
       <Image avatar src='https://res.cloudinary.com/dbbgin0ik/image/upload/v1604012082/image.png.png' size='tiny' circular />
+      <span style={{ marginRight: "30px" }}></span>
+      {user && <Button color='vk' onClick={Home} block style={{color: "white",}}>Home</Button>}
       <span style={{ marginRight: "30px" }}></span>
       {user && <Button color='vk' onClick={allQuestions} block style={{color: "white",}}>All Questions</Button>}
             <span style={{ marginRight: "30px" }}></span>

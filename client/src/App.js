@@ -25,6 +25,7 @@ import "./App.css";
 import "./index.css"
 import Leaderboard from "./components/Leaderboard";
 import HighestWeek from "./components/HighestWeek";
+import Home from "./components/Home";
 // anything in fetchuser will be hidden while that checkuser function is running
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
             <Route exact path="/" component={LandingPage} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
+            <Route exact path="/Home" component={Home} />
             <ProtecedRoute exact path="/questionView/:id" component={QuestionView} />
             <ProtecedRoute exact path="/upvote" component={Upvote} />
             <ProtecedRoute exact path="/AskQuestion" component={AskQuestion} />

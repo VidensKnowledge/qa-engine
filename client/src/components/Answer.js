@@ -65,10 +65,7 @@ const Answer = (props) => {
           <Comments {...comments} answerID={props.id} authUser={user} userID={props.user_id}/>
          </Card> 
           }
-        
       </div>
-      
-
     );
   };
 
